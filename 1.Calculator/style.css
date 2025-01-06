@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* Container da calculadora */
+.calc-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos da calculadora */
+.calc {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+
+/* Estilo do visor de expressão */
+#result-expression {
+    grid-column: span 4;
+    text-align: right;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    margin-bottom: 10px;
+
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Estilo dos botões especiais */
+button.operator {
+    background-color: #f0a500;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #e59400;
+}
+
+button.equal {
+    background-color: #28a745;
+    color: white;
+}
+
+button.equal:hover {
+    background-color: #218838;
+}
+
+button.clear {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #c82333;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+    .calc {
+        width: 260px;
+    }
+
+    .result-expression {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
