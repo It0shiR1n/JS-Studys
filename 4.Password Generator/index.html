@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        
+        <h1>Gerador de Senhas</h1>
+       
+        <p>Utilize o nosso gerador online para criar uma senha forte e segura</p>
+        
+        
+        <input type="text" class="passwd"/>
+        
+        <input type="button" value="Copy the password" onclick="clipboardCopy()">
+        <input type="button" value="Generate Password" class="btn-generate">
+
+        <input type="range" class="passwd-length" max="30" min="4"/>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="lowerLetters" class="lowerLetters" value="true">
+            <label for="lowerLetters">Lower Letters</label>
+        
+            <input type="checkbox" id="upperLetters" class="upperLetters" value="true">
+            <label for="upperLetters">Upper Letters</label>
+
+            <input type="checkbox" id="numbers" class="numbers" value="true">
+            <label for="numbers">Upper Letters</label>
+        
+            <input type="checkbox" id="specialChars" class="specialChars" value="true">
+            <label for="specialChars">Special Characters</label>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
