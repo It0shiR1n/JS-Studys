@@ -1,9 +1,4 @@
 
-// Criar um sistema de sorteio
-// Mudar a cor do background
-// Se a cor for igual a um dos elementos da página mudar a cor deles também
-// Dizer o nome da cor
-
 
 function changeColor(){
     const cssColors = [
